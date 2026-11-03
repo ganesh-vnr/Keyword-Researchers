@@ -91,7 +91,7 @@ export const SavedKeywordsPage: React.FC<SavedKeywordsPageProps> = ({
               </span>
               <button
                 onClick={() => setIsCreatingList(!isCreatingList)}
-                className="text-xs text-emerald-700 font-semibold hover:underline flex items-center gap-1"
+                className="text-xs text-teal-700 font-semibold hover:underline flex items-center gap-1"
               >
                 <Plus className="w-3.5 h-3.5" />
                 <span>New List</span>
@@ -111,7 +111,7 @@ export const SavedKeywordsPage: React.FC<SavedKeywordsPageProps> = ({
                 />
                 <button
                   type="submit"
-                  className="px-3 py-1.5 bg-emerald-600 text-white rounded-lg text-xs font-semibold"
+                  className="px-3 py-1.5 bg-teal-600 text-white rounded-lg text-xs font-semibold"
                 >
                   Create
                 </button>
@@ -126,7 +126,7 @@ export const SavedKeywordsPage: React.FC<SavedKeywordsPageProps> = ({
                   onClick={() => setActiveListId(list.id)}
                   className={`p-3 rounded-lg cursor-pointer transition-colors flex items-center justify-between ${
                     activeList?.id === list.id
-                      ? 'bg-emerald-50 border border-emerald-200 text-emerald-900 font-bold'
+                      ? 'bg-teal-50 border border-teal-200 text-teal-900 font-bold'
                       : 'hover:bg-slate-50 text-slate-700'
                   }`}
                 >
@@ -185,7 +185,7 @@ export const SavedKeywordsPage: React.FC<SavedKeywordsPageProps> = ({
                   <button
                     onClick={handleExportCSV}
                     disabled={activeList.keywords.length === 0}
-                    className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 disabled:opacity-50 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors flex items-center gap-1.5 shadow-sm"
+                    className="px-4 py-2 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 disabled:opacity-50 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all flex items-center gap-1.5 shadow-sm"
                   >
                     <Download className="w-3.5 h-3.5" />
                     <span>Export CSV</span>

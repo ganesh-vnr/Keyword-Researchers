@@ -110,7 +110,7 @@ export const KeywordClusteringView: React.FC<KeywordClusteringViewProps> = ({ on
             <button
               onClick={handleCluster}
               disabled={isProcessing}
-              className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm flex items-center justify-center gap-2"
+              className="px-6 py-2.5 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-sm flex items-center justify-center gap-2"
             >
               <Play className="w-3.5 h-3.5 fill-white" />
               <span>{isProcessing ? 'Clustering...' : 'Cluster Keywords'}</span>

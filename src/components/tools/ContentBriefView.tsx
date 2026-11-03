@@ -78,7 +78,7 @@ ${brief.paaQuestions.map(q => `- ${q}`).join('\n')}
           </div>
           <button
             type="submit"
-            className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm shrink-0"
+            className="px-6 py-2.5 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-sm shrink-0"
           >
             Generate Brief
           </button>
@@ -90,7 +90,7 @@ ${brief.paaQuestions.map(q => `- ${q}`).join('\n')}
         {/* Header Bar */}
         <div className="p-5 border-b border-slate-200 bg-slate-50 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
-            <span className="text-xs font-bold text-emerald-700 uppercase tracking-wider block mb-1">
+            <span className="text-xs font-bold text-teal-700 uppercase tracking-wider block mb-1">
               Editorial Specification
             </span>
             <h2 className="text-lg font-extrabold text-slate-900">
@@ -100,7 +100,7 @@ ${brief.paaQuestions.map(q => `- ${q}`).join('\n')}
 
           <button
             onClick={copyMarkdownBrief}
-            className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors flex items-center gap-1.5 shrink-0 shadow-sm"
+            className="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors flex items-center gap-1.5 shrink-0 shadow-sm"
           >
             <Copy className="w-3.5 h-3.5" />
             <span>{copied ? 'Copied Markdown Brief!' : 'Copy Markdown Brief'}</span>
@@ -163,7 +163,7 @@ ${brief.paaQuestions.map(q => `- ${q}`).join('\n')}
           {/* Headings outline */}
           <div className="lg:col-span-7 space-y-4">
             <h3 className="text-xs font-bold text-slate-700 uppercase tracking-wider flex items-center gap-1.5">
-              <FileText className="w-4 h-4 text-emerald-600" />
+              <FileText className="w-4 h-4 text-teal-600" />
               Recommended Article Heading Structure
             </h3>
 
@@ -178,7 +178,7 @@ ${brief.paaQuestions.map(q => `- ${q}`).join('\n')}
                   }`}
                 >
                   <div className="flex items-center gap-2">
-                    <span className="font-mono text-[10px] uppercase text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">
+                    <span className="font-mono text-[10px] uppercase text-teal-700 bg-teal-50 px-1.5 py-0.5 rounded border border-teal-200">
                       {head.tag}
                     </span>
                     <span className="text-xs sm:text-sm">{head.text}</span>
@@ -213,7 +213,7 @@ ${brief.paaQuestions.map(q => `- ${q}`).join('\n')}
               <ul className="space-y-2 text-xs text-slate-700">
                 {brief.paaQuestions.map((q, i) => (
                   <li key={i} className="p-2.5 bg-slate-50 rounded border border-slate-200 flex items-start gap-2">
-                    <span className="text-emerald-600 font-bold">Q:</span>
+                    <span className="text-teal-600 font-bold">Q:</span>
                     <span>{q}</span>
                   </li>
                 ))}

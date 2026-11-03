@@ -94,7 +94,7 @@ export const SearchIntentView: React.FC = () => {
           </div>
           <button
             type="submit"
-            className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm shrink-0"
+            className="px-6 py-2.5 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-sm shrink-0"
           >
             Classify Intent
           </button>
@@ -112,7 +112,7 @@ export const SearchIntentView: React.FC = () => {
             <h2 className="text-2xl font-extrabold text-slate-900">
               {result.primary}
             </h2>
-            <span className="text-xs font-bold px-2.5 py-1 rounded bg-emerald-100 text-emerald-800">
+            <span className="text-xs font-bold px-2.5 py-1 rounded bg-teal-50 text-teal-800 border border-teal-200">
               High Confidence
             </span>
           </div>
@@ -142,7 +142,7 @@ export const SearchIntentView: React.FC = () => {
               </div>
               <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
                 <div
-                  className="h-full bg-emerald-500 rounded-full"
+                  className="h-full bg-teal-500 rounded-full"
                   style={{ width: `${result.distribution.commercial}%` }}
                 />
               </div>

@@ -26,7 +26,7 @@ export const KeywordDifficultyView: React.FC<KeywordDifficultyViewProps> = ({
   const isModerate = kd >= 35 && kd < 70;
   const isHard = kd >= 70;
 
-  const kdColor = isEasy ? '#059669' : isModerate ? '#d97706' : '#e11d48';
+  const kdColor = isEasy ? '#0d9488' : isModerate ? '#d97706' : '#e11d48';
   const kdTier = isEasy ? 'Easy to Rank' : isModerate ? 'Moderate Competition' : 'Highly Competitive';
 
   return (
@@ -62,7 +62,7 @@ export const KeywordDifficultyView: React.FC<KeywordDifficultyViewProps> = ({
           </div>
           <button
             type="submit"
-            className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm shrink-0"
+            className="px-6 py-2.5 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-sm shrink-0"
           >
             Analyze Difficulty
           </button>

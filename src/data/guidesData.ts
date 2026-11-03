@@ -34,7 +34,7 @@ Most beginner SEOs make the catastrophic mistake of targeting monolithic keyword
 To drive predictable organic revenue without waiting two years, you need to uncover **low-difficulty, high-intent clusters**.
 
 ### 1. The 3-Tier Keyword Filter Formula
-When filtering suggestions in KeyNumbers:
+When filtering suggestions in PurelySEO:
 1. Set Maximum Keyword Difficulty to **35**.
 2. Filter Search Intent to **Commercial** or **Transactional**.
 3. Look for terms with at least **300 to 2,500 monthly searches**.
@@ -48,7 +48,7 @@ Search for your target query manually or use our **SERP Snippet Preview Tool**. 
 - Are forum threads (Reddit, StackExchange, Quora) ranking? If yes, Google is desperate for comprehensive, authoritative editorial content.
 
 ### 3. Executing the Pillar-Cluster Model
-Rather than writing disjointed articles, group your discovered queries using the **KeyNumbers Keyword Clustering Tool**. Create one authoritative pillar page that links to 4-5 focused sub-topic pages. This builds topical authority faster than isolated blogging.
+Rather than writing disjointed articles, group your discovered queries using the **PurelySEO Keyword Clustering Tool**. Create one authoritative pillar page that links to 4-5 focused sub-topic pages. This builds topical authority faster than isolated blogging.
     `
   },
   {
@@ -72,10 +72,10 @@ Keyword clustering is the practice of grouping keywords with shared search inten
 In the past, webmasters created separate pages for "best running shoes", "top running footwear", and "best shoes for running". In 2026, Google recognizes these queries as identical intent and penalizes sites that split them into thin pages.
 
 ### Step 1: Collecting Seed Keywords
-Export your seed keyword list from the **KeyNumbers Long-Tail Suggester**. Aim for a list of 50 to 200 related queries covering your target topic.
+Export your seed keyword list from the **PurelySEO Long-Tail Suggester**. Aim for a list of 50 to 200 related queries covering your target topic.
 
 ### Step 2: Applying Algorithmic Clustering
-Paste your raw keyword list into the **KeyNumbers Keyword Clustering Tool**. The tool evaluates:
+Paste your raw keyword list into the **PurelySEO Keyword Clustering Tool**. The tool evaluates:
 - Token overlap and stemming similarity
 - Query intent classification
 - SERP intent parity
@@ -127,7 +127,7 @@ Search engines evaluate click satisfaction (dwell time, bounce rate, pogo-sticki
 - **Goal:** Smooth frictionless conversion.
 
 #### 4. Navigational Intent
-- **Query Patterns:** "keyword numbers login", "ahrefs billing", "slack download"
+- **Query Patterns:** "purelyseo login", "ahrefs billing", "slack download"
 - **Best Format:** Dedicated portal login, homepage, or feature download page.
     `
   },
@@ -150,7 +150,7 @@ Search engines evaluate click satisfaction (dwell time, bounce rate, pogo-sticki
 Cannibalization happens when your domain has two or more pages targeting the exact same topic and intent. Instead of helping your site rank higher, Google splits the ranking signals (backlinks, authority, click-through signals) between the URLs.
 
 ### How to Run a Cannibalization Audit
-1. Open the **KeyNumbers Keyword Cannibalization Detector**.
+1. Open the **PurelySEO Keyword Cannibalization Detector**.
 2. Enter your site's target URLs and associated primary keywords.
 3. The tool flags duplicate intents, volatile rankings, and overlapping title tags.
 

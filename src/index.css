@@ -1,9 +1,29 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+:root {
+  /* PurelySEO Color Psychology System */
+  /* 1. Trust & Authority: Midnight Navy */
+  --purely-navy: #0b132b;
+  --purely-navy-soft: #1c2541;
+  
+  /* 2. Growth & Progress: Precision Teal & Vibrant Emerald */
+  --purely-teal: #0d9488;
+  --purely-teal-hover: #0f766e;
+  --purely-emerald: #10b981;
+  --purely-cyan: #06b6d4;
+  
+  /* 3. Surface & Clarity */
+  --purely-surface: #ffffff;
+  --purely-canvas: #f8fafc;
+  --purely-border: #e2e8f0;
+}
+
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #0f172a;
+    background-color: #f8fafc;
   }
   
   /* Custom scrollbar for data tables */

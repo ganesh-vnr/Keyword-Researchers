@@ -112,7 +112,7 @@ export const YouTubeTagsView: React.FC = () => {
           </div>
           <button
             type="submit"
-            className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm shrink-0"
+            className="px-6 py-2.5 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-sm shrink-0"
           >
             Generate Tags
           </button>
@@ -130,7 +130,7 @@ export const YouTubeTagsView: React.FC = () => {
               {engagementScore}
             </span>
             <span className="text-xs text-slate-400">/ 100</span>
-            <span className="text-xs font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
+            <span className="text-xs font-bold px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200">
               {engagementScore >= 80 ? 'High CTR' : 'Moderate'}
             </span>
           </div>
@@ -179,7 +179,7 @@ export const YouTubeTagsView: React.FC = () => {
 
           <button
             onClick={copyTags}
-            className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors flex items-center gap-1.5 shadow-sm"
+            className="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors flex items-center gap-1.5 shadow-sm"
           >
             <Copy className="w-3.5 h-3.5" />
             <span>{copied ? 'Copied to Clipboard!' : 'Copy All Tags (CSV)'}</span>
@@ -208,12 +208,12 @@ export const YouTubeTagsView: React.FC = () => {
           {tags.map((tag, idx) => (
             <div
               key={idx}
-              className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-100 hover:bg-slate-200/80 rounded-md text-xs font-medium text-slate-800 transition-colors"
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-teal-50 hover:bg-teal-100/70 border border-teal-100 rounded-md text-xs font-medium text-teal-900 transition-colors"
             >
               <span>{tag}</span>
               <button
                 onClick={() => removeTag(tag)}
-                className="text-slate-400 hover:text-rose-600"
+                className="text-teal-500 hover:text-rose-600"
               >
                 &times;
               </button>

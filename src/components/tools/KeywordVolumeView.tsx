@@ -110,7 +110,7 @@ export const KeywordVolumeView: React.FC<KeywordVolumeViewProps> = ({
 
           <button
             type="submit"
-            className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm shrink-0"
+            className="px-6 py-2.5 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-sm shrink-0"
           >
             Check Volume
           </button>
@@ -226,7 +226,7 @@ export const KeywordVolumeView: React.FC<KeywordVolumeViewProps> = ({
             </button>
             <button
               onClick={handleExport}
-              className="px-3 py-1.5 text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-md transition-colors flex items-center gap-1.5"
+              className="px-3 py-1.5 text-xs font-semibold text-white bg-teal-600 hover:bg-teal-700 rounded-md transition-colors flex items-center gap-1.5"
             >
               <Download className="w-3.5 h-3.5" />
               <span>Export CSV</span>
@@ -252,14 +252,14 @@ export const KeywordVolumeView: React.FC<KeywordVolumeViewProps> = ({
                       <div
                         className={`w-full rounded-t transition-all ${
                           isPeak
-                            ? 'bg-emerald-600'
-                            : 'bg-slate-200 group-hover:bg-emerald-400'
+                            ? 'bg-teal-600'
+                            : 'bg-slate-200 group-hover:bg-teal-400'
                         }`}
                         style={{ height: `${pct}%` }}
                       />
                       <span
                         className={`text-[10px] mt-2 font-mono ${
-                          isPeak ? 'font-bold text-emerald-700' : 'text-slate-500'
+                          isPeak ? 'font-bold text-teal-700' : 'text-slate-500'
                         }`}
                       >
                         {pt.month}

@@ -10,7 +10,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onNavigate
   const comparisonData = [
     {
       feature: 'Monthly Subscription Cost',
-      keynumbers: '$0 / Forever Free',
+      purelyseo: '$0 / Forever Free',
       semrush: '$139.95 / mo',
       ahrefs: '$129.00 / mo',
       keywordsEverywhere: 'Pay-per-credit ($15+)',
@@ -18,7 +18,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onNavigate
     },
     {
       feature: 'Account Signup & Credit Card Required',
-      keynumbers: 'No (Instant Access)',
+      purelyseo: 'No (Instant Access)',
       semrush: 'Mandatory',
       ahrefs: 'Mandatory',
       keywordsEverywhere: 'Mandatory',
@@ -26,7 +26,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onNavigate
     },
     {
       feature: 'Monthly Search Volume & Trends',
-      keynumbers: 'Yes (12-Mo Trend)',
+      purelyseo: 'Yes (12-Mo Trend)',
       semrush: 'Yes',
       ahrefs: 'Yes',
       keywordsEverywhere: 'Yes',
@@ -34,7 +34,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onNavigate
     },
     {
       feature: 'Keyword Difficulty (KD) Score',
-      keynumbers: 'Yes (0-100 Scale)',
+      purelyseo: 'Yes (0-100 Scale)',
       semrush: 'Yes',
       ahrefs: 'Yes',
       keywordsEverywhere: 'Limited',
@@ -42,7 +42,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onNavigate
     },
     {
       feature: 'Semantic Topic Clustering',
-      keynumbers: 'Included Free',
+      purelyseo: 'Included Free',
       semrush: 'Higher Tier ($249+)',
       ahrefs: 'Separate Credits',
       keywordsEverywhere: 'No',
@@ -50,7 +50,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onNavigate
     },
     {
       feature: 'SERP Pixel Snippet Simulator',
-      keynumbers: 'Desktop + Mobile Live',
+      purelyseo: 'Desktop + Mobile Live',
       semrush: 'Limited Preview',
       ahrefs: 'No Preview',
       keywordsEverywhere: 'No',
@@ -58,7 +58,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onNavigate
     },
     {
       feature: 'Content Density & TF-IDF Analyzer',
-      keynumbers: 'Included Free',
+      purelyseo: 'Included Free',
       semrush: 'Content Add-on ($)',
       ahrefs: 'No',
       keywordsEverywhere: 'No',
@@ -66,7 +66,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onNavigate
     },
     {
       feature: 'YouTube Tags & Video Optimization',
-      keynumbers: 'Included Free',
+      purelyseo: 'Included Free',
       semrush: 'No',
       ahrefs: 'YouTube tool only',
       keywordsEverywhere: 'Basic overlay',
@@ -74,7 +74,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onNavigate
     },
     {
       feature: 'Data Export to CSV & JSON',
-      keynumbers: 'Unlimited & Free',
+      purelyseo: 'Unlimited & Free',
       semrush: 'Row limited on basic',
       ahrefs: 'Export credit caps',
       keywordsEverywhere: 'Consumes credits',
@@ -87,7 +87,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onNavigate
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           {/* Unboxed metadata */}
-          <div className="flex items-center justify-center gap-2 text-xs font-semibold text-emerald-700 mb-2">
+          <div className="flex items-center justify-center gap-2 text-xs font-semibold text-teal-800 mb-2">
             <span>Market Transparency</span>
             <span aria-hidden="true">·</span>
             <span>Feature Breakdown</span>
@@ -95,7 +95,7 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onNavigate
             <span>Zero Paywall Promise</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            How KeyNumbers Compares to Legacy Paid SEO Tools
+            How PurelySEO Compares to Legacy Paid SEO Tools
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
             Legacy tools charge $1,200 to $1,800 every year just for fundamental keyword volume and difficulty lookups. We believe search intelligence should be open, fast, and accessible to everyone.
@@ -110,10 +110,10 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onNavigate
                 <th className="py-4 px-5 text-xs font-bold text-slate-700 uppercase tracking-wider w-1/3">
                   Capability / Feature
                 </th>
-                <th className="py-4 px-5 text-xs font-bold text-emerald-700 uppercase tracking-wider bg-emerald-50/80 border-x border-emerald-200 w-1/4">
-                  <div className="flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-emerald-600" />
-                    <span>KeyNumbers (Free)</span>
+                <th className="py-4 px-5 text-xs font-bold text-teal-900 uppercase tracking-wider bg-teal-50/90 border-x border-teal-200 w-1/4">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-teal-600" />
+                    <span>PurelySEO (Free)</span>
                   </div>
                 </th>
                 <th className="py-4 px-5 text-xs font-semibold text-slate-600 uppercase tracking-wider">
@@ -132,14 +132,14 @@ export const ComparisonSection: React.FC<ComparisonSectionProps> = ({ onNavigate
                 <tr
                   key={idx}
                   className={`hover:bg-slate-50/60 transition-colors ${
-                    row.highlight ? 'bg-emerald-50/20' : ''
+                    row.highlight ? 'bg-teal-50/25' : ''
                   }`}
                 >
                   <td className="py-3.5 px-5 text-slate-800 font-semibold">
                     {row.feature}
                   </td>
-                  <td className="py-3.5 px-5 bg-emerald-50/40 border-x border-emerald-100 font-bold text-emerald-800 font-mono tabular-nums">
-                    {row.keynumbers}
+                  <td className="py-3.5 px-5 bg-teal-50/40 border-x border-teal-100 font-bold text-teal-900 font-mono tabular-nums">
+                    {row.purelyseo}
                   </td>
                   <td className="py-3.5 px-5 text-slate-600 font-mono tabular-nums">
                     {row.semrush}

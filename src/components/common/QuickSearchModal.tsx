@@ -132,7 +132,7 @@ export const QuickSearchModal: React.FC<QuickSearchModalProps> = ({ isOpen, onCl
         {/* Footer info */}
         <div className="px-4 py-2.5 bg-slate-50 border-t border-slate-200 flex items-center justify-between text-[11px] text-slate-500">
           <span>Tip: Press ESC anytime to dismiss</span>
-          <span>KeyNumbers Quick Navigation</span>
+          <span>PurelySEO Command Palette</span>
         </div>
       </div>
     </div>

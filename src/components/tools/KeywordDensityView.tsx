@@ -61,7 +61,7 @@ export const KeywordDensityView: React.FC = () => {
             </label>
             <button
               onClick={() => setContent(SAMPLE_ARTICLE)}
-              className="text-xs text-emerald-700 font-semibold hover:underline"
+              className="text-xs text-teal-600 font-semibold hover:underline"
             >
               Load Sample Article
             </button>
@@ -72,7 +72,7 @@ export const KeywordDensityView: React.FC = () => {
             value={content}
             onChange={e => setContent(e.target.value)}
             placeholder="Paste your content here to analyze keyword frequency, density, and readability..."
-            className="w-full flex-1 p-3.5 text-xs sm:text-sm font-sans bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-emerald-500 text-slate-900 leading-relaxed resize-y"
+            className="w-full flex-1 p-3.5 text-xs sm:text-sm font-sans bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-teal-500 text-slate-900 leading-relaxed resize-y"
           />
 
           <div className="mt-3 flex items-center justify-between text-xs text-slate-500">
@@ -125,7 +125,7 @@ export const KeywordDensityView: React.FC = () => {
                 {analysis.fleschScore}
               </span>
               <span className="text-xs text-slate-400">/ 100</span>
-              <span className="text-xs font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
+              <span className="text-xs font-bold px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200">
                 {analysis.fleschLevel}
               </span>
             </div>
@@ -141,7 +141,7 @@ export const KeywordDensityView: React.FC = () => {
             </h3>
             <div className="space-y-2 text-xs">
               <div className="flex items-center gap-2 text-slate-700">
-                <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0" />
+                <CheckCircle className="w-4 h-4 text-teal-600 shrink-0" />
                 <span>Primary keywords recommended between 1.0% - 2.5%</span>
               </div>
               <div className="flex items-center gap-2 text-slate-700">
@@ -239,7 +239,7 @@ export const KeywordDensityView: React.FC = () => {
                           Over-Optimized (&gt;3.5%)
                         </span>
                       ) : (
-                        <span className="text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                        <span className="text-[11px] font-medium text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">
                           Optimal
                         </span>
                       )}

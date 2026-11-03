@@ -7,7 +7,7 @@ export const ExtensionPage: React.FC = () => {
     <div className="py-12 bg-white">
       {/* Top Banner */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
-        <div className="flex items-center justify-center gap-2 text-xs font-semibold text-emerald-700 mb-2">
+        <div className="flex items-center justify-center gap-2 text-xs font-semibold text-teal-800 mb-2">
           <span>Browser Extension</span>
           <span aria-hidden="true">·</span>
           <span>Version 3.4</span>
@@ -18,7 +18,7 @@ export const ExtensionPage: React.FC = () => {
           Search Demand &amp; CPC Directly on Google &amp; YouTube
         </h1>
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-          The KeyNumbers browser extension brings search volume, competition metrics, and related search queries directly onto the search engine result pages you use every day.
+          The PurelySEO browser extension brings search volume, competition metrics, and related search queries directly onto the search engine result pages you use every day.
         </p>
 
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -26,7 +26,7 @@ export const ExtensionPage: React.FC = () => {
             href="https://chrome.google.com/webstore"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-md transition-colors flex items-center gap-2"
+            className="px-6 py-3.5 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg shadow-md transition-all flex items-center gap-2"
           >
             <Download className="w-4 h-4" />
             <span>Add to Chrome - 100% Free</span>
@@ -53,19 +53,19 @@ export const ExtensionPage: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-6 rounded-xl border border-slate-200 bg-slate-50">
-            <div className="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center mb-4">
               <Zap className="w-5 h-5" />
             </div>
             <h3 className="text-base font-bold text-slate-900 mb-2">
               Instant Google SERP Overlay
             </h3>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Whenever you search on Google, KeyNumbers injects a floating sidebar with monthly search volume, historical trend direction, CPC in USD, and top 10 related long-tail keywords.
+              Whenever you search on Google, PurelySEO injects a floating sidebar with monthly search volume, historical trend direction, CPC in USD, and top 10 related long-tail keywords.
             </p>
           </div>
 
           <div className="p-6 rounded-xl border border-slate-200 bg-slate-50">
-            <div className="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center mb-4">
               <Star className="w-5 h-5" />
             </div>
             <h3 className="text-base font-bold text-slate-900 mb-2">
@@ -77,7 +77,7 @@ export const ExtensionPage: React.FC = () => {
           </div>
 
           <div className="p-6 rounded-xl border border-slate-200 bg-slate-50">
-            <div className="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center mb-4">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <h3 className="text-base font-bold text-slate-900 mb-2">
@@ -98,7 +98,7 @@ export const ExtensionPage: React.FC = () => {
         <div className="space-y-4 text-xs sm:text-sm">
           <div className="p-5 rounded-xl border border-slate-200 bg-white">
             <h3 className="font-bold text-slate-900 mb-1">
-              Is the KeyNumbers Chrome extension truly 100% free?
+              Is the PurelySEO Chrome extension truly 100% free?
             </h3>
             <p className="text-slate-600 leading-relaxed">
               Yes. You do not need to enter a credit card, purchase credits, or subscribe to any hidden tier. All monthly search volumes and CPC benchmarks are completely free.

@@ -41,7 +41,7 @@ export const RoiCalculatorView: React.FC = () => {
           <div>
             <div className="flex justify-between text-xs font-semibold text-slate-700 mb-1">
               <span>Target Monthly Search Volume</span>
-              <span className="font-mono tabular-nums text-emerald-700 font-bold">
+              <span className="font-mono tabular-nums text-teal-700 font-bold">
                 {searchVolume.toLocaleString()} searches
               </span>
             </div>
@@ -52,7 +52,7 @@ export const RoiCalculatorView: React.FC = () => {
               step="1000"
               value={searchVolume}
               onChange={e => setSearchVolume(Number(e.target.value))}
-              className="w-full accent-emerald-600 cursor-pointer"
+              className="w-full accent-teal-600 cursor-pointer"
             />
           </div>
 
@@ -71,7 +71,7 @@ export const RoiCalculatorView: React.FC = () => {
                   onClick={() => setTargetRank(rank)}
                   className={`py-1.5 text-xs font-mono font-bold rounded border transition-colors ${
                     targetRank === rank
-                      ? 'bg-emerald-600 text-white border-emerald-600'
+                      ? 'bg-teal-600 text-white border-teal-600 shadow-sm'
                       : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
                   }`}
                 >
@@ -96,7 +96,7 @@ export const RoiCalculatorView: React.FC = () => {
               step="0.1"
               value={conversionRate}
               onChange={e => setConversionRate(Number(e.target.value))}
-              className="w-full accent-emerald-600 cursor-pointer"
+              className="w-full accent-teal-600 cursor-pointer"
             />
           </div>
 
@@ -115,7 +115,7 @@ export const RoiCalculatorView: React.FC = () => {
               step="10"
               value={customerValue}
               onChange={e => setCustomerValue(Number(e.target.value))}
-              className="w-full accent-emerald-600 cursor-pointer"
+              className="w-full accent-teal-600 cursor-pointer"
             />
           </div>
 
@@ -134,27 +134,27 @@ export const RoiCalculatorView: React.FC = () => {
               step="0.50"
               value={cpcEstimate}
               onChange={e => setCpcEstimate(Number(e.target.value))}
-              className="w-full accent-emerald-600 cursor-pointer"
+              className="w-full accent-teal-600 cursor-pointer"
             />
           </div>
         </div>
 
         {/* Right Output Projections */}
         <div className="lg:col-span-7 space-y-4">
-          {/* Big Revenue Projection Box */}
-          <div className="bg-emerald-950 text-white p-6 rounded-xl border border-emerald-900 shadow-md">
-            <span className="text-xs font-semibold text-emerald-400 uppercase tracking-wider block mb-1">
+          {/* Big Revenue Projection Box - Deep Navy */}
+          <div className="bg-[#0B132B] text-white p-6 rounded-xl border border-slate-800 shadow-xl">
+            <span className="text-xs font-semibold text-teal-400 uppercase tracking-wider block mb-1">
               Projected Monthly Organic Revenue
             </span>
             <div className="flex items-baseline gap-2">
-              <span className="text-4xl sm:text-5xl font-extrabold font-mono tabular-nums text-emerald-300">
+              <span className="text-4xl sm:text-5xl font-extrabold font-mono tabular-nums text-emerald-400">
                 ${roi.estimatedMonthlyRevenue.toLocaleString()}
               </span>
-              <span className="text-xs text-emerald-400 font-semibold">/ month</span>
+              <span className="text-xs text-slate-400 font-semibold">/ month</span>
             </div>
-            <div className="mt-3 pt-3 border-t border-emerald-800/80 flex items-center justify-between text-xs text-emerald-200">
+            <div className="mt-3 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-slate-300">
               <span>Annualized Value:</span>
-              <span className="font-mono font-bold text-sm text-white">
+              <span className="font-mono font-bold text-sm text-teal-300">
                 ${roi.estimatedAnnualRevenue.toLocaleString()} / year
               </span>
             </div>
@@ -213,7 +213,7 @@ export const RoiCalculatorView: React.FC = () => {
                   key={c.rank}
                   className={`px-2 py-1 rounded text-center shrink-0 border ${
                     targetRank === c.rank
-                      ? 'bg-emerald-50 border-emerald-300 text-emerald-800 font-bold'
+                      ? 'bg-teal-50 border-teal-300 text-teal-800 font-bold'
                       : 'bg-slate-50 border-slate-200'
                   }`}
                 >

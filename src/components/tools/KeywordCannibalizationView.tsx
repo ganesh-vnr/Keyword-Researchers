@@ -107,18 +107,18 @@ export const KeywordCannibalizationView: React.FC = () => {
             value={newUrl}
             onChange={e => setNewUrl(e.target.value)}
             placeholder="URL (e.g. https://yoursite.com/blog/seo-tools)..."
-            className="flex-1 p-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-emerald-500 font-mono"
+            className="flex-1 p-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-teal-500 font-mono"
           />
           <input
             type="text"
             value={newKeyword}
             onChange={e => setNewKeyword(e.target.value)}
             placeholder="Target Keyword (e.g. best seo tools)..."
-            className="flex-1 p-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-emerald-500 font-medium"
+            className="flex-1 p-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-teal-500 font-medium"
           />
           <button
             type="submit"
-            className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm shrink-0 flex items-center justify-center gap-1.5"
+            className="px-6 py-2.5 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-sm shrink-0 flex items-center justify-center gap-1.5"
           >
             <Plus className="w-4 h-4" />
             <span>Audit Mapping</span>
@@ -133,7 +133,7 @@ export const KeywordCannibalizationView: React.FC = () => {
             className={`w-10 h-10 rounded-lg flex items-center justify-center ${
               criticalCount > 0
                 ? 'bg-rose-50 text-rose-700 border border-rose-200'
-                : 'bg-emerald-50 text-emerald-700 border border-emerald-200'
+                : 'bg-teal-50 text-teal-700 border border-teal-200'
             }`}
           >
             <AlertTriangle className="w-5 h-5" />
@@ -152,7 +152,7 @@ export const KeywordCannibalizationView: React.FC = () => {
 
         <button
           onClick={() => setEntries(SAMPLE_ENTRIES)}
-          className="text-xs text-emerald-700 font-semibold hover:underline"
+          className="text-xs text-teal-700 font-semibold hover:underline"
         >
           Reset to Sample Audit
         </button>

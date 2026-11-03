@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Globe, ArrowUpRight, TrendingUp, Bookmark, Sparkles, AlertCircle } from 'lucide-react';
+import { Search, Globe, ArrowUpRight, TrendingUp, Bookmark, Sparkles, AlertCircle, Zap } from 'lucide-react';
 import { KeywordMetric, ActiveTab } from '../../types/seo';
 import { getKeywordMetrics } from '../../services/keywordEngine';
 
@@ -56,19 +56,22 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
 
   return (
     <section className="relative overflow-hidden pt-12 pb-16 md:pt-20 md:pb-24 border-b border-slate-200 bg-white">
-      {/* Background subtle grid pattern */}
+      {/* Background subtle mesh glow */}
       <div
-        className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        className="absolute inset-0 opacity-[0.035] pointer-events-none"
         style={{
-          backgroundImage: `radial-gradient(#0f172a 1px, transparent 1px)`,
+          backgroundImage: `radial-gradient(#0b132b 1px, transparent 1px)`,
           backgroundSize: '24px 24px',
         }}
       />
+      
+      {/* Top subtle ambient glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-gradient-to-b from-teal-50/60 to-transparent pointer-events-none blur-3xl -z-10" />
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Anti-slop zero pill metadata: clean text separated with subtle dot */}
-        <div className="flex items-center justify-center gap-2 text-xs font-semibold text-emerald-700 mb-3 tracking-wide">
-          <span>Free Keyword Research Suite</span>
+        <div className="flex items-center justify-center gap-2 text-xs font-semibold text-teal-800 mb-3 tracking-wide">
+          <span>PurelySEO Search Intelligence</span>
           <span aria-hidden="true">·</span>
           <span>No Credit Card Required</span>
           <span aria-hidden="true">·</span>
@@ -80,7 +83,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
         </h1>
 
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed text-balance">
-          Analyze accurate monthly search demand, ranking difficulty, CPC, and topic clusters in real time. Built for marketers who want reliable data without $100+/mo subscriptions.
+          Analyze accurate monthly search demand, ranking difficulty, CPC, and topic clusters in real time with PurelySEO. Built for marketers who want reliable data without $100+/mo subscriptions.
         </p>
 
         {/* Main Search Input Form */}
@@ -90,7 +93,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
               e.preventDefault();
               handleSearch(searchInput);
             }}
-            className="flex flex-col sm:flex-row items-stretch gap-2 p-2 bg-white rounded-xl shadow-lg border border-slate-200"
+            className="flex flex-col sm:flex-row items-stretch gap-2 p-2 bg-white rounded-xl shadow-lg shadow-slate-900/5 border border-slate-200/90 focus-within:border-teal-500 focus-within:ring-2 focus-within:ring-teal-500/20 transition-all"
           >
             {/* Country selector */}
             <div className="relative flex items-center pl-3 pr-2 text-slate-600 border-b sm:border-b-0 sm:border-r border-slate-200 py-2 sm:py-0">
@@ -127,7 +130,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
             {/* Submit CTA */}
             <button
               type="submit"
-              className="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm shrink-0 flex items-center justify-center gap-1.5"
+              className="px-6 py-3 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-sm hover:shadow shrink-0 flex items-center justify-center gap-1.5"
             >
               <span>Inspect Keyword</span>
               <ArrowUpRight className="w-4 h-4" />
@@ -154,7 +157,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
 
         {/* Live Instant Metric Card */}
         {currentMetric && (
-          <div className="mt-10 max-w-4xl mx-auto bg-slate-50 rounded-xl border border-slate-200 p-5 sm:p-6 text-left shadow-sm">
+          <div className="mt-10 max-w-4xl mx-auto bg-slate-50/80 rounded-xl border border-slate-200 p-5 sm:p-6 text-left shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-200 gap-3">
               <div>
                 <div className="flex items-center gap-3">
@@ -184,7 +187,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
                 </button>
                 <button
                   onClick={() => onNavigateTool('tool-volume')}
-                  className="px-3 py-1.5 text-xs font-medium bg-emerald-600 hover:bg-emerald-700 text-white rounded-md transition-colors flex items-center gap-1.5"
+                  className="px-3 py-1.5 text-xs font-medium bg-teal-600 hover:bg-teal-700 text-white rounded-md transition-colors flex items-center gap-1.5"
                 >
                   <span>Full Analysis</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
@@ -205,7 +208,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
                   <span
                     className={`text-xs font-semibold ${
                       currentMetric.trendDirection === 'up'
-                        ? 'text-emerald-600'
+                        ? 'text-teal-600'
                         : currentMetric.trendDirection === 'down'
                         ? 'text-amber-600'
                         : 'text-slate-500'
@@ -230,7 +233,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
                   <span
                     className={`text-xs font-bold px-1.5 py-0.5 rounded ${
                       currentMetric.difficulty < 35
-                        ? 'bg-emerald-100 text-emerald-800'
+                        ? 'bg-teal-100 text-teal-800'
                         : currentMetric.difficulty < 70
                         ? 'bg-amber-100 text-amber-800'
                         : 'bg-rose-100 text-rose-800'
@@ -281,7 +284,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
               <div className="mt-4 pt-4 border-t border-slate-200">
                 <div className="flex items-center justify-between text-xs text-slate-500 mb-2">
                   <span className="font-semibold text-slate-700 flex items-center gap-1.5">
-                    <TrendingUp className="w-3.5 h-3.5 text-emerald-600" />
+                    <TrendingUp className="w-3.5 h-3.5 text-teal-600" />
                     12-Month Search Volume History
                   </span>
                   <span className="font-mono text-[11px]">
@@ -296,7 +299,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
                       return (
                         <div key={i} className="flex flex-col items-center h-full justify-end group/bar">
                           <div
-                            className="w-full bg-emerald-500 hover:bg-emerald-600 rounded-t transition-all relative"
+                            className="w-full bg-teal-500 hover:bg-teal-600 rounded-t transition-all relative"
                             style={{ height: `${heightPct}%` }}
                             title={`${point.month}: ${point.volume.toLocaleString()} searches`}
                           />

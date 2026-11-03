@@ -117,7 +117,7 @@ export const RedirectCheckerView: React.FC = () => {
           <button
             type="submit"
             disabled={isChecking}
-            className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm shrink-0"
+            className="px-6 py-2.5 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-sm shrink-0"
           >
             {isChecking ? 'Tracing...' : 'Trace Redirects'}
           </button>
@@ -136,7 +136,7 @@ export const RedirectCheckerView: React.FC = () => {
             </span>
             <span
               className={`text-xs font-bold ${
-                finalHop?.statusCode === 200 ? 'text-emerald-600' : 'text-rose-600'
+                finalHop?.statusCode === 200 ? 'text-teal-600' : 'text-rose-600'
               }`}
             >
               {finalHop?.statusText}
@@ -183,7 +183,7 @@ export const RedirectCheckerView: React.FC = () => {
               <div
                 className={`w-10 h-10 rounded-lg flex items-center justify-center font-mono font-bold text-sm shrink-0 ${
                   hop.statusCode === 200
-                    ? 'bg-emerald-100 text-emerald-800 border border-emerald-200'
+                    ? 'bg-teal-50 text-teal-800 border border-teal-200'
                     : 'bg-amber-100 text-amber-800 border border-amber-200'
                 }`}
               >

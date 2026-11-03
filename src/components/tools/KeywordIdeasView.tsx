@@ -98,7 +98,7 @@ export const KeywordIdeasView: React.FC<KeywordIdeasViewProps> = ({
           </div>
           <button
             type="submit"
-            className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm shrink-0"
+            className="px-6 py-2.5 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-sm shrink-0"
           >
             Generate Ideas
           </button>
@@ -137,7 +137,7 @@ export const KeywordIdeasView: React.FC<KeywordIdeasViewProps> = ({
               step="5"
               value={maxKd}
               onChange={e => setMaxKd(Number(e.target.value))}
-              className="w-24 accent-emerald-600"
+              className="w-24 accent-teal-600"
             />
             <span className="font-mono tabular-nums text-slate-800 font-bold">{maxKd}</span>
           </div>
@@ -154,7 +154,7 @@ export const KeywordIdeasView: React.FC<KeywordIdeasViewProps> = ({
           </button>
           <button
             onClick={handleExport}
-            className="px-3 py-1.5 text-xs font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-md transition-colors flex items-center gap-1.5"
+            className="px-3 py-1.5 text-xs font-semibold text-white bg-teal-600 hover:bg-teal-700 rounded-md transition-colors flex items-center gap-1.5"
           >
             <Download className="w-3.5 h-3.5" />
             <span>Export CSV</span>

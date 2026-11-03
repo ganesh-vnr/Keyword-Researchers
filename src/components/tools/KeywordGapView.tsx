@@ -96,7 +96,7 @@ export const KeywordGapView: React.FC = () => {
           <div className="flex items-end">
             <button
               type="submit"
-              className="w-full py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm"
+              className="w-full py-2.5 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-sm"
             >
               {isComparing ? 'Comparing...' : 'Run Gap Analysis'}
             </button>
@@ -141,7 +141,7 @@ export const KeywordGapView: React.FC = () => {
             Unique Ranking Wins
           </span>
           <div className="mt-1 flex items-baseline gap-2">
-            <span className="text-3xl font-extrabold text-emerald-600 font-mono tabular-nums">
+            <span className="text-3xl font-extrabold text-teal-600 font-mono tabular-nums">
               {uniqueCount}
             </span>
             <span className="text-xs text-slate-500">leading queries</span>
@@ -183,7 +183,7 @@ export const KeywordGapView: React.FC = () => {
                 <th className="py-3 px-5">Target Keyword</th>
                 <th className="py-3 px-5">Search Volume</th>
                 <th className="py-3 px-5">KD</th>
-                <th className="py-3 px-5 font-mono text-emerald-700">{myDomain}</th>
+                <th className="py-3 px-5 font-mono text-teal-700">{myDomain}</th>
                 <th className="py-3 px-5 font-mono">{comp1}</th>
                 <th className="py-3 px-5 font-mono">{comp2}</th>
                 <th className="py-3 px-5 text-right">Opportunity</th>
@@ -218,7 +218,7 @@ export const KeywordGapView: React.FC = () => {
                           : row.type === 'Weak'
                           ? 'bg-amber-100 text-amber-800'
                           : row.type === 'Unique'
-                          ? 'bg-emerald-100 text-emerald-800'
+                          ? 'bg-teal-50 text-teal-800 border border-teal-200'
                           : 'bg-slate-100 text-slate-700'
                       }`}
                     >

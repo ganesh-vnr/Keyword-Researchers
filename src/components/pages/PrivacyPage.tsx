@@ -14,7 +14,7 @@ export const PrivacyPage: React.FC = () => {
         <section>
           <h2 className="text-base font-bold text-slate-900 mb-2">1. Our Core Commitment to Privacy</h2>
           <p>
-            KeyNumbers is built with a privacy-by-design ethos. We believe that keyword research and competitive SEO intelligence should not require tracking user browsing behavior or building digital advertising profiles.
+            PurelySEO is built with a privacy-by-design ethos. We believe that keyword research and competitive SEO intelligence should not require tracking user browsing behavior or building digital advertising profiles.
           </p>
         </section>
 
@@ -28,7 +28,7 @@ export const PrivacyPage: React.FC = () => {
         <section>
           <h2 className="text-base font-bold text-slate-900 mb-2">3. Browser Extension Security</h2>
           <p>
-            The KeyNumbers Chrome extension requests only necessary host permissions required to overlay keyword metrics on supported search engine pages. The extension does not record keystrokes, personal passwords, or private account data.
+            The PurelySEO Chrome extension requests only necessary host permissions required to overlay keyword metrics on supported search engine pages. The extension does not record keystrokes, personal passwords, or private account data.
           </p>
         </section>
 
@@ -57,7 +57,7 @@ export const TermsPage: React.FC = () => {
         <section>
           <h2 className="text-base font-bold text-slate-900 mb-2">1. Acceptance of Terms</h2>
           <p>
-            By accessing or utilizing KeyNumbers web tools and browser extensions, you agree to comply with and be bound by these Terms of Service.
+            By accessing or utilizing PurelySEO web tools and browser extensions, you agree to comply with and be bound by these Terms of Service.
           </p>
         </section>
 
@@ -71,7 +71,7 @@ export const TermsPage: React.FC = () => {
         <section>
           <h2 className="text-base font-bold text-slate-900 mb-2">3. Acceptable Use Policy</h2>
           <p>
-            You agree not to deploy automated botnets, abusive scraping scripts, or distributed denial-of-service attempts against KeyNumbers infrastructure. Normal API usage via published endpoints is permitted.
+            You agree not to deploy automated botnets, abusive scraping scripts, or distributed denial-of-service attempts against PurelySEO infrastructure. Normal API usage via published endpoints is permitted.
           </p>
         </section>
       </div>

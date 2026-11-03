@@ -59,8 +59,8 @@ export const ToolsGrid: React.FC<ToolsGridProps> = ({ onSelectTool }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
           <div>
-            <div className="text-xs font-semibold text-emerald-700 tracking-wide mb-1">
-              Complete Tool Directory
+            <div className="text-xs font-semibold text-teal-800 tracking-wide mb-1">
+              PurelySEO Utility Directory
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
               16+ Free SEO &amp; Keyword Utilities
@@ -96,11 +96,11 @@ export const ToolsGrid: React.FC<ToolsGridProps> = ({ onSelectTool }) => {
               <div
                 key={tool.id}
                 onClick={() => onSelectTool(tool.id)}
-                className="group cursor-pointer bg-white rounded-xl border border-slate-200 hover:border-emerald-500 hover:shadow-md transition-all p-5 flex flex-col justify-between"
+                className="group cursor-pointer bg-white rounded-xl border border-slate-200 hover:border-teal-500 hover:shadow-md transition-all p-5 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <div className="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                    <div className="w-10 h-10 rounded-lg bg-teal-50 text-teal-700 flex items-center justify-center group-hover:bg-teal-600 group-hover:text-white transition-colors">
                       <IconComponent className="w-5 h-5" />
                     </div>
                     {/* Unboxed metadata separator */}
@@ -109,7 +109,7 @@ export const ToolsGrid: React.FC<ToolsGridProps> = ({ onSelectTool }) => {
                     </span>
                   </div>
 
-                  <h3 className="text-base font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                  <h3 className="text-base font-bold text-slate-900 group-hover:text-teal-700 transition-colors">
                     {tool.name}
                   </h3>
                   <p className="mt-2 text-xs text-slate-600 leading-relaxed">
@@ -117,7 +117,7 @@ export const ToolsGrid: React.FC<ToolsGridProps> = ({ onSelectTool }) => {
                   </p>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-emerald-700">
+                <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-teal-700">
                   <span>Launch Tool</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>

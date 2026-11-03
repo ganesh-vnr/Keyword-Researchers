@@ -1,17 +1,17 @@
 import { KeywordMetric, SavedKeywordList } from '../types/seo';
 
-const SAVED_LISTS_KEY = 'keynumbers_saved_lists';
-const SEARCH_HISTORY_KEY = 'keynumbers_search_history';
+const SAVED_LISTS_KEY = 'purelyseo_saved_lists';
+const SEARCH_HISTORY_KEY = 'purelyseo_search_history';
 
 export function getSavedLists(): SavedKeywordList[] {
   try {
-    const raw = localStorage.getItem(SAVED_LISTS_KEY);
+    let raw = localStorage.getItem(SAVED_LISTS_KEY);
     if (!raw) {
       // Default initial list with high value sample terms
       const defaultList: SavedKeywordList[] = [
         {
           id: 'list-default',
-          name: 'My Target Keywords',
+          name: 'PurelySEO Priority Keywords',
           createdAt: new Date().toLocaleDateString(),
           keywords: [
             {
@@ -135,7 +135,7 @@ export function addSearchHistory(keyword: string): void {
 /**
  * Universal export to CSV function
  */
-export function exportKeywordsToCSV(keywords: KeywordMetric[], filename = 'keywords_export.csv'): void {
+export function exportKeywordsToCSV(keywords: KeywordMetric[], filename = 'purelyseo_keywords_export.csv'): void {
   const headers = ['Keyword', 'Search Volume', 'CPC (USD)', 'Difficulty (0-100)', 'Search Intent', 'Competition'];
   const rows = keywords.map(k => [
     `"${k.keyword.replace(/"/g, '""')}"`,
@@ -160,7 +160,7 @@ export function exportKeywordsToCSV(keywords: KeywordMetric[], filename = 'keywo
 /**
  * Universal export to JSON
  */
-export function exportToJSON(data: unknown, filename = 'seo_data_export.json'): void {
+export function exportToJSON(data: unknown, filename = 'purelyseo_data_export.json'): void {
   const jsonStr = JSON.stringify(data, null, 2);
   const blob = new Blob([jsonStr], { type: 'application/json' });
   const url = URL.createObjectURL(blob);

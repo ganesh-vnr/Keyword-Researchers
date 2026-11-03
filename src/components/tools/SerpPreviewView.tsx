@@ -85,7 +85,7 @@ export const SerpPreviewView: React.FC = () => {
               type="text"
               value={title}
               onChange={e => setTitle(e.target.value)}
-              className="w-full p-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-emerald-500 text-slate-900 font-medium"
+              className="w-full p-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-teal-500 text-slate-900 font-medium"
             />
             {/* Title Pixel Meter */}
             <div className="w-full h-1.5 bg-slate-100 rounded-full mt-2 overflow-hidden">
@@ -94,8 +94,8 @@ export const SerpPreviewView: React.FC = () => {
                   titlePercent > 100
                     ? 'bg-rose-500'
                     : titlePercent > 85
-                    ? 'bg-emerald-500'
-                    : 'bg-emerald-400'
+                    ? 'bg-teal-500'
+                    : 'bg-teal-400'
                 }`}
                 style={{ width: `${Math.min(100, titlePercent)}%` }}
               />
@@ -117,7 +117,7 @@ export const SerpPreviewView: React.FC = () => {
               type="text"
               value={url}
               onChange={e => setUrl(e.target.value)}
-              className="w-full p-2.5 text-xs sm:text-sm font-mono bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-emerald-500 text-slate-900"
+              className="w-full p-2.5 text-xs sm:text-sm font-mono bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-teal-500 text-slate-900"
             />
           </div>
 
@@ -141,7 +141,7 @@ export const SerpPreviewView: React.FC = () => {
               rows={4}
               value={description}
               onChange={e => setDescription(e.target.value)}
-              className="w-full p-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-emerald-500 text-slate-900 leading-relaxed"
+              className="w-full p-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-teal-500 text-slate-900 leading-relaxed"
             />
             {/* Description Pixel Meter */}
             <div className="w-full h-1.5 bg-slate-100 rounded-full mt-2 overflow-hidden">
@@ -150,8 +150,8 @@ export const SerpPreviewView: React.FC = () => {
                   descPercent > 100
                     ? 'bg-rose-500'
                     : descPercent > 85
-                    ? 'bg-emerald-500'
-                    : 'bg-emerald-400'
+                    ? 'bg-teal-500'
+                    : 'bg-teal-400'
                 }`}
                 style={{ width: `${Math.min(100, descPercent)}%` }}
               />
@@ -165,7 +165,7 @@ export const SerpPreviewView: React.FC = () => {
                 type="checkbox"
                 checked={showRating}
                 onChange={e => setShowRating(e.target.checked)}
-                className="rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
+                className="rounded border-slate-300 text-teal-600 focus:ring-teal-500"
               />
               <span>Include 5-Star Review Rating</span>
             </label>
@@ -174,7 +174,7 @@ export const SerpPreviewView: React.FC = () => {
                 type="checkbox"
                 checked={showDate}
                 onChange={e => setShowDate(e.target.checked)}
-                className="rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
+                className="rounded border-slate-300 text-teal-600 focus:ring-teal-500"
               />
               <span>Include Published Date</span>
             </label>
@@ -182,7 +182,7 @@ export const SerpPreviewView: React.FC = () => {
 
           <button
             onClick={copyMetaTags}
-            className="w-full py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors flex items-center justify-center gap-2"
+            className="w-full py-2.5 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-sm flex items-center justify-center gap-2"
           >
             <Copy className="w-3.5 h-3.5" />
             <span>{codeCopied ? 'HTML Meta Tags Copied!' : 'Copy HTML Meta Tags'}</span>

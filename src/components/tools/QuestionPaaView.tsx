@@ -82,7 +82,7 @@ export const QuestionPaaView: React.FC<QuestionPaaViewProps> = ({
           </div>
           <button
             type="submit"
-            className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors shadow-sm shrink-0"
+            className="px-6 py-2.5 bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-700 hover:to-emerald-700 text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-all shadow-sm shrink-0"
           >
             Find Questions
           </button>
@@ -121,7 +121,7 @@ export const QuestionPaaView: React.FC<QuestionPaaViewProps> = ({
         {/* Action */}
         <button
           onClick={generateFaqSchema}
-          className="px-3.5 py-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-md transition-colors flex items-center gap-1.5 shrink-0"
+          className="px-3.5 py-1.5 text-xs font-semibold text-teal-700 bg-teal-50 hover:bg-teal-100 border border-teal-200 rounded-md transition-colors flex items-center gap-1.5 shrink-0"
         >
           <Code className="w-3.5 h-3.5" />
           <span>{schemaCopied ? 'Copied FAQ JSON-LD!' : 'Generate FAQ Schema'}</span>

@@ -57,7 +57,7 @@ export const ApiDocsPage: React.FC = () => {
     }
   };
 
-  const curlCommand = `curl -X GET "https://api.keynumbers.com/v1/${selectedEndpoint}?q=${encodeURIComponent(
+  const curlCommand = `curl -X GET "https://api.purelyseo.com/v1/${selectedEndpoint}?q=${encodeURIComponent(
     testParam
   )}" \\
   -H "Accept: application/json"`;
@@ -65,7 +65,7 @@ export const ApiDocsPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-3xl mx-auto text-center mb-12">
-        <div className="flex items-center justify-center gap-2 text-xs font-semibold text-emerald-700 mb-2">
+        <div className="flex items-center justify-center gap-2 text-xs font-semibold text-teal-800 mb-2">
           <span>Developer Resources</span>
           <span aria-hidden="true">·</span>
           <span>REST API v1</span>
@@ -73,7 +73,7 @@ export const ApiDocsPage: React.FC = () => {
           <span>Zero Authentication Required</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
-          KeyNumbers Developer API
+          PurelySEO Developer API
         </h1>
         <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
           Programmatically query keyword search volume, historical trend distributions, and semantic topic clusters via simple JSON REST endpoints.
