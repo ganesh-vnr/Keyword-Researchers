@@ -1,0 +1,6 @@
+{
+  "name": "KeyNumbers - Free Keyword Research & SEO Intelligence Platform",
+  "description": "Comprehensive free SEO tool suite for keyword search volume, difficulty, long-tail ideas, clustering, SERP previews, and on-page content optimization without paywalls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
